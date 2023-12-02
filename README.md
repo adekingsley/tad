@@ -17,7 +17,7 @@ Tad test is a breif test AI machine learning work that can analyse, charatersize
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/adekingsley/Tad_test.git
+   git clone https://github.com/adekingsley/tad.git
    cd your-project
    ```
 
