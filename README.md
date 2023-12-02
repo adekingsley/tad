@@ -33,7 +33,13 @@ Tad test is a breif test AI machine learning work that can analyse, charatersize
    flask run --port=5001
    ```
 
-   The application should be running at `http://localhost:5000/`.
+4. **Run the API from postman or curl: by sending a post request to the url below containing the opay bank statement in pdf with a key file**
+
+   ```bash
+   flask run --port=5001/upload
+   ```
+
+   The application should be running at `http://localhost:5001/`.
 
 ### Endpoints
 
@@ -57,22 +63,32 @@ Tad test is a breif test AI machine learning work that can analyse, charatersize
     ```bash
     curl http://localhost:5000/calculate_loan
     ```
-  - **Example Response:**
-    ```json
-    {
-      "loan_amount": 50000,
-      "message": "User consistently receives a salary in at least 4 months.",
-      "salary_consistent": true
-    }
+- **Analyse your account**
+
+  - **Endpoint:** `/analyse`
+  - **Method:** `GET`
+  - **Description:** analyse your account using chats this can enable you to have a clear picture of your income/expenditure and salary consistency.
+  - **Parameters:**
+    - None
+  - **Response:**
+    - **Example Request:**
+    ```bash
+    curl http://localhost:5000/analyse
     ```
 
 ### Usage
 
-Provide examples or instructions on how to use your API. Include sample requests and responses.
+f the code breaks during analysis please exit the server and restart your local server again.
 
 ### Dependencies
 
-List any external libraries or dependencies required to run your project.
+here are the used dependencies 
+Flask==3.0.0
+PyPDF2==3.0.1
+python-dateutil==2.8.2
+matplotlib==3.8.2
+numpy==1.26.2
+etc. please do open the requirements for more details
 
 ### Contributing
 
