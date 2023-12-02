@@ -34,7 +34,9 @@ Tad test is a breif test AI machine learning work that can analyse, charatersize
    ```
 
 4. **Run the API from postman or curl: by sending a post request to the url below containing the opay bank statement in pdf with a key file**
-
+   
+- **Endpoint:** `/upload`
+  - **Method:** `POST`
    ```bash
    flask run --port=5001/upload
    ```
