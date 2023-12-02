@@ -30,7 +30,7 @@ Tad test is a breif test AI machine learning work that can analyse, charatersize
 3. **Run the application:**
 
    ```bash
-   python app.py
+   flask run --port=5001
    ```
 
    The application should be running at `http://localhost:5000/`.
